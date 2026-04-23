@@ -1,0 +1,13 @@
+{
+  "name": "NeuroFunnel",
+  "subtitle": "Immersive funnels, engineered.",
+  "primaryCategory": "BUSINESS",
+  "secondaryCategory": "PRODUCTIVITY",
+  "ageRating": "4+",
+  "description": "NeuroFunnel turns an offer and a niche into a six-step immersive sequence, an editable funnel, and an immersive preview you can ship in minutes. Generate hooks, pattern interrupts, reality shifts, identity triggers, offer reveals, and CTAs tuned for your audience. Configure tone, intensity, and CTA goal. Open the builder to compose blocks, edit copy, and reorder. Preview the sequence in fullscreen. Track views, conversions, revenue, engagement time, and a Perception Score. Built for founders, coaches, ecommerce operators, and creators who want attention to feel inevitable.",
+  "keywords": "funnel,immersive,ai,storytelling,conversion,creator,founder,coach,ecommerce,landing",
+  "supportUrl": "https://neurofunnel.ai/support",
+  "marketingUrl": "https://neurofunnel.ai",
+  "privacyUrl": "https://neurofunnel.ai/privacy",
+  "reviewNotes": "iOS subscriptions are delivered via Apple In-App Purchase through RevenueCat. Web-only sign-ups and marketing content exist on the universal web target; the iOS binary routes marketing paths to sign-in. Apple Sign-In, email magic link, account deletion, and restore purchases are all implemented. Test account: e2e@neurofunnel.ai"
+}

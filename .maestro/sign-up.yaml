@@ -1,0 +1,13 @@
+appId: ai.neurofunnel.app
+name: Sign up with email, land on dashboard
+---
+- launchApp:
+    clearState: true
+- assertVisible: "Welcome back."
+    optional: true
+- tapOn: "Create an account"
+- tapOn:
+    id: "Email"
+- inputText: "e2e@neurofunnel.ai"
+- tapOn: "Create account"
+- assertVisible: "Good morning, Ava."

@@ -1,0 +1,13 @@
+appId: ai.neurofunnel.app
+name: Generate and save an experience
+---
+- launchApp
+- tapOn: "Create new experience"
+- tapOn: "Generate sequence"
+- extendedWaitUntil:
+    visible: "Save experience"
+    timeout: 5000
+- tapOn: "Save experience"
+- assertVisible: "Experience saved."
+- tapOn: "Open in builder"
+- assertVisible: "Block library"

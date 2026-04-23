@@ -1,0 +1,54 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  quality:
+    name: Type check, lint, unit tests, web export
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "pnpm"
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Type check
+        run: pnpm typecheck
+
+      - name: Lint
+        run: pnpm lint
+
+      - name: Unit tests
+        run: pnpm test -- --coverage --passWithNoTests
+
+      - name: Export web build
+        run: pnpm export:web
+
+      - name: Enforce web bundle budget
+        run: |
+          set -e
+          SIZE=$(du -sk dist | awk '{print $1}')
+          echo "dist size: ${SIZE}KB"
+          if [ "$SIZE" -gt 5120 ]; then
+            echo "Web bundle exceeded 5MB budget (${SIZE}KB)" >&2
+            exit 1
+          fi

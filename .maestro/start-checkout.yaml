@@ -1,0 +1,11 @@
+appId: ai.neurofunnel.app
+name: Start an in-app purchase (StoreKit test flow)
+---
+- launchApp
+- tapOn: "Billing"
+- assertVisible: "Plan & billing"
+- tapOn: "Upgrade to Pro"
+- extendedWaitUntil:
+    visible: "Current plan"
+    timeout: 4000
+- assertVisible: "Pro"
