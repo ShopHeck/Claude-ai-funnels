@@ -1,0 +1,13 @@
+appId: ai.neurofunnel.app
+name: App Store required account deletion
+---
+- launchApp
+- tapOn: "Settings"
+- assertVisible: "Delete account"
+- tapOn: "Delete my account"
+- assertVisible: "Delete your account?"
+- tapOn:
+    id: "Type DELETE"
+- inputText: "DELETE"
+- tapOn: "Delete forever"
+- assertVisible: "Welcome back."

@@ -1,0 +1,88 @@
+import type { Template } from "@/types";
+
+export const templates: Template[] = [
+  {
+    id: "tpl_quiet_waitlist",
+    title: "The Quiet Waitlist",
+    category: "lead_gen",
+    thumbnail: "https://images.unsplash.com/photo-1517420704952-d9f39e95b43e?w=800&auto=format&fit=crop",
+    value_prop: "Lead capture that feels like an invitation, not a form.",
+    recommended_emotion: "curiosity",
+    recommended_tone: "cinematic",
+    preview_steps: [
+      { type: "hook", title: "A list that quietly assembles the right people.", content: "" },
+      { type: "offer_reveal", title: "Private early access.", content: "" },
+      { type: "cta", title: "Add your name to the list.", content: "" },
+    ],
+  },
+  {
+    id: "tpl_restock_drop",
+    title: "Restock Drop",
+    category: "ecommerce",
+    thumbnail: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800&auto=format&fit=crop",
+    value_prop: "Convert a restock into a ritual with scarcity, editorial copy, and a real deadline.",
+    recommended_emotion: "urgency",
+    recommended_tone: "confident",
+    preview_steps: [
+      { type: "hook", title: "The piece you missed is back.", content: "" },
+      { type: "reality_shift", title: "Closet-safe, not trend-safe.", content: "" },
+      { type: "cta", title: "Claim your size before it closes.", content: "" },
+    ],
+  },
+  {
+    id: "tpl_affiliate_bridge",
+    title: "Affiliate Bridge",
+    category: "affiliate",
+    thumbnail: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&auto=format&fit=crop",
+    value_prop: "Turn a cold click into a warm, pre-sold handoff before the merchant page loads.",
+    recommended_emotion: "desire",
+    recommended_tone: "confident",
+    preview_steps: [
+      { type: "hook", title: "Here's what the product page won't tell you.", content: "" },
+      { type: "identity_trigger", title: "This is for people who already know.", content: "" },
+      { type: "cta", title: "Continue to the product.", content: "" },
+    ],
+  },
+  {
+    id: "tpl_application_only",
+    title: "Application-Only Advisory",
+    category: "high_ticket",
+    thumbnail: "https://images.unsplash.com/photo-1529429617124-95b109e86bb8?w=800&auto=format&fit=crop",
+    value_prop: "A qualification funnel that filters for fit before it ever talks about price.",
+    recommended_emotion: "aspiration",
+    recommended_tone: "luxury",
+    preview_steps: [
+      { type: "hook", title: "We don't open the door to everyone.", content: "" },
+      { type: "offer_reveal", title: "What's inside the advisory.", content: "" },
+      { type: "cta", title: "Request a private conversation.", content: "" },
+    ],
+  },
+  {
+    id: "tpl_founder_waitlist",
+    title: "Founder Waitlist",
+    category: "lead_gen",
+    thumbnail: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&auto=format&fit=crop",
+    value_prop: "A beta waitlist framed like a limited round, not a newsletter sign-up.",
+    recommended_emotion: "trust",
+    recommended_tone: "intimate",
+    preview_steps: [
+      { type: "hook", title: "We open two seats a month.", content: "" },
+      { type: "reality_shift", title: "Not a newsletter. A cohort.", content: "" },
+      { type: "cta", title: "Claim your seat.", content: "" },
+    ],
+  },
+  {
+    id: "tpl_course_stack",
+    title: "The Finishing Stack",
+    category: "high_ticket",
+    thumbnail: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&auto=format&fit=crop",
+    value_prop: "For creators who have bought the courses. This one is about finishing them.",
+    recommended_emotion: "transformation",
+    recommended_tone: "intimate",
+    preview_steps: [
+      { type: "hook", title: "You don't need another course.", content: "" },
+      { type: "identity_trigger", title: "You are already the creator you were becoming.", content: "" },
+      { type: "cta", title: "Begin the 30 days.", content: "" },
+    ],
+  },
+];

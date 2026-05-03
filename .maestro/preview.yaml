@@ -1,0 +1,13 @@
+appId: ai.neurofunnel.app
+name: Open immersive preview of an existing experience
+---
+- launchApp
+- tapOn: "Experiences"
+- tapOn: "Quiet Luxury Offer Reveal"
+- tapOn: "Preview"
+- extendedWaitUntil:
+    visible: "Request your private review."
+    timeout: 4000
+- tapOn:
+    id: "Exit preview"
+- assertVisible: "Quiet Luxury Offer Reveal"
